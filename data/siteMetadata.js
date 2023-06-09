@@ -9,16 +9,15 @@ const siteMetadata = {
   language: 'en-us',
   theme: 'system', // system, dark or light
   siteUrl: 'https://austonyoungblood.com/',
-  siteRepo: 'https://github.com/timlrx/tailwind-nextjs-starter-blog',
+  siteRepo: 'https://github.com/austonyb/austonyoungblood.com',
   siteLogo: '/static/images/logo.png',
   image: '/static/images/avatar.png',
   socialBanner: '/static/images/twitter-card.png',
   email: 'auston.contact@gmail.com',
-  github: 'https://github.com',
-  twitter: 'https://twitter.com/Twitter',
-  facebook: 'https://facebook.com',
-  youtube: 'https://youtube.com',
-  linkedin: 'https://www.linkedin.com',
+  github: 'https://github.com/austonyb/',
+  twitter: 'https://twitter.com/austony',
+  youtube: 'https://www.youtube.com/@bigtimenerddev',
+  linkedin: 'https://www.linkedin.com/in/auston-youngblood/',
   locale: 'en-US',
   analytics: {
     // If you want to use an analytics provider you have to add it to the
