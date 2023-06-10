@@ -1,18 +1,20 @@
 const projectsData = [
   {
-    title: 'A Search Engine',
-    description: `What if you could look up any information in the world? Webpages, images, videos
-    and more. Google has many features to help you find exactly what you're looking
-    for.`,
-    imgSrc: '/static/images/google.png',
-    href: 'https://www.google.com',
+    title: 'bigTimeNerd.dev',
+    description: `Tech news site and blog. Created for my foundations capstone project at Dev Mountain.`,
+    imgSrc: '/static/images/bigTimeNerdLogoLarge.png',
+    href: 'https://github.com/austonyb/bigtimenerd.dev',
   },
   {
-    title: 'The Time Machine',
-    description: `Imagine being able to travel back in time or to the future. Simple turn the knob
-    to the desired date and press "Go". No more worrying about lost keys or
-    forgotten headphones with this simple yet affordable solution.`,
-    imgSrc: '/static/images/time-machine.jpg',
+    title: 'Earn the Right App',
+    description: `Earn the Right Journal is a powerful app designed to help users track their progress as they work through the challenges presented in the self-help book, Earn the Right by Patrick Youngblood. With this app, you can easily log your progress and stay motivated as you work to become the best version of yourself.`,
+    imgSrc: '/static/images/earnTheRightApp.png',
+    href: '/blog/the-time-machine',
+  },
+  {
+    title: 'austonyoungblood.com (This Site)',
+    description: `Learn more about this site, and how it came to be!`,
+    imgSrc: '/static/images/auston.jpg',
     href: '/blog/the-time-machine',
   },
 ]
