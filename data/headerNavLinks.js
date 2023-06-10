@@ -13,7 +13,7 @@ const headerNavLinks = [
   },
   {
     href: '/about',
-    title: 'About',
+    title: 'About Auston',
   },
 ]
 export default headerNavLinks
