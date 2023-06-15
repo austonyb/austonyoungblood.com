@@ -92,6 +92,71 @@ export default function Home({ posts }) {
           </Link>
         </div>
       )}
+
+<div className="divide-y divide-gray-200 dark:divide-gray-700">
+      <section>
+          <div class=" mx-auto flex flex-col items-center px-5 py-8">
+            <div class="prose mb-8 flex w-full max-w-max flex-col text-left lg:max-w-2xl">
+              <div class="mx-auto w-full">
+                <h1 className='dark:text-gray-100'>Thanks for visiting!</h1>
+                <h2 className='dark:text-gray-100 italic'>A Place for...everything! </h2>
+                <p className='dark:text-gray-100'>
+                  That might be a little too ambitious... but that is what I am endeavouring to do! For the longest time I have wanted a place where I could share my projects, portfolio pieces, art, and everything else in-between. This site is where all of those things meet.
+                </p>
+                <p className='dark:text-gray-100'>
+                  I am an iOS developer, web frontend engineer, filmmaker, drone pilot, and lover of creative pursuits.
+                </p>
+                <Link
+                          href={`/about`}
+                          className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+                          aria-label={`Read More about Auston`}
+                        >
+                          Read more about me &rarr;
+                        </Link>
+              </div>
+            </div>
+          </div>
+          {/* <div class=" w-full items-center px-5">
+            <div class="prose mx-auto flex w-full max-w-max flex-wrap justify-center lg:max-w-3xl">
+              <div class="relative justify-center lg:px-4">
+                <div class="lg:grid lg:grid-cols-2">
+                  <div class="p-8">
+                    <h1 className='dark:text-gray-100'>Short length headline.</h1>
+                    <p className='dark:text-gray-100'>
+                      You're about to launch soon and must be 100% focused on your product. Don't
+                      loose precious days designing, coding the landing page and testing .
+                    </p>
+                    <a
+                      href="#"
+                      class="mt-4 inline-flex items-center font-semibold text-blue-600 hover:text-neutral-600 lg:mb-0"
+                      title="read more"
+                    >
+                      {' '}
+                      Read More »{' '}
+                    </a>
+                  </div>
+                  <div class="p-8">
+                    <h1 className='dark:text-gray-100'>Short length headline.</h1>
+                    <p className='dark:text-gray-100'>
+                      You're about to launch soon and must be 100% focused on your product. Don't
+                      loose precious days designing, coding the landing page and testing .
+                    </p>
+                    <a
+                      href="#"
+                      class="mt-4 inline-flex items-center font-semibold text-blue-600 hover:text-neutral-600 lg:mb-0"
+                      title="read more"
+                    >
+                      {' '}
+                      Read More »{' '}
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> */}
+        </section>
+      </div>
+
       {siteMetadata.newsletter.provider && (
         <div className="flex items-center justify-center pt-4">
           <NewsletterForm />
