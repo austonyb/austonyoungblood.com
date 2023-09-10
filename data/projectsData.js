@@ -1,9 +1,9 @@
 const projectsData = [
   {
-    title: 'bigTimeNerd.dev',
-    description: `Tech news site and blog. Created for my foundations capstone project at Dev Mountain.`,
-    imgSrc: '/static/images/bigTimeNerdLogoLarge.png',
-    href: 'https://github.com/austonyb/bigtimenerd.dev',
+    title: 'Symphony Of The Cells',
+    description: `iOS and Android Client Project`,
+    imgSrc: '/static/images/socScreenshot.png',
+    href: 'blog/symphonyOfTheCells',
   },
   {
     title: 'Earn the Right App',
@@ -12,16 +12,16 @@ const projectsData = [
     href: 'blog/earnTheRight',
   },
   {
+    title: 'bigTimeNerd.dev',
+    description: `Tech news site and blog. Created for my foundations capstone project at Dev Mountain.`,
+    imgSrc: '/static/images/bigTimeNerdLogoLarge.png',
+    href: 'https://github.com/austonyb/bigtimenerd.dev',
+  },
+  {
     title: 'Resume',
     description: ``,
     imgSrc: '/static/images/resume.png',
     href: '/static/AustonYoungbloodResume.pdf',
-  },
-  {
-    title: 'Symphony Of The Cells',
-    description: `iOS client project`,
-    imgSrc: '/static/images/socScreenshot.png',
-    href: 'https://apps.apple.com/us/app/symphony-of-the-cells/id1581782553',
   },
 ]
 export default projectsData

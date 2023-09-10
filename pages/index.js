@@ -4,8 +4,10 @@ import Tag from '@/components/Tag'
 import siteMetadata from '@/data/siteMetadata'
 import { formatDate } from 'pliny/utils/formatDate'
 import { sortedBlogPost, allCoreContent } from 'pliny/utils/contentlayer'
-import { NewsletterForm } from 'pliny/ui/NewsletterForm'
+//import { NewsletterForm } from 'pliny/ui/NewsletterForm'
 import { allBlogs } from 'contentlayer/generated'
+//a little experiment:
+import Projects from './projects'
 const MAX_DISPLAY = 5
 export const getStaticProps = async () => {
   const sortedPosts = sortedBlogPost(allBlogs)
@@ -20,10 +22,13 @@ export default function Home({ posts }) {
   return (
     <>
       <PageSEO title={siteMetadata.title} description={siteMetadata.description} />
+      {/* Import the projects page into the top of the index page. */}
+      <Projects />
+
       <div className="divide-y divide-gray-200 dark:divide-gray-700">
         <div className="space-y-2 pb-8 pt-6 md:space-y-5">
           <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
-            Latest
+            Big Time Nerd
           </h1>
           <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
             {siteMetadata.description}
@@ -93,8 +98,8 @@ export default function Home({ posts }) {
         </div>
       )}
 
-<div className="divide-y divide-gray-200 dark:divide-gray-700">
-      <section>
+      <div className="divide-y divide-gray-200 dark:divide-gray-700">
+        <section>
           <div class=" mx-auto flex flex-col items-center px-5 py-8">
             <div class="prose mb-8 flex w-full max-w-max flex-col text-left lg:max-w-2xl">
               <div class="mx-auto w-full">
@@ -107,12 +112,12 @@ export default function Home({ posts }) {
                   I am mobile developer, web engineer, filmmaker, drone pilot, and lover of creative pursuits.
                 </p>
                 <Link
-                          href={`/about`}
-                          className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
-                          aria-label={`Read More about Auston`}
-                        >
-                          Read more about me &rarr;
-                        </Link>
+                  href={`/about`}
+                  className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+                  aria-label={`Read More about Auston`}
+                >
+                  Read more about me &rarr;
+                </Link>
               </div>
             </div>
           </div>
