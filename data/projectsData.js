@@ -21,7 +21,7 @@ const projectsData = [
     title: 'Resume',
     description: ``,
     imgSrc: '/static/images/resume.png',
-    href: '/static/AustonYoungbloodResume.pdf',
+    href: '/static/AustonYoungblood2023.pdf',
   },
 ]
 export default projectsData
