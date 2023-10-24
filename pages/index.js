@@ -8,7 +8,7 @@ import { sortedBlogPost, allCoreContent } from 'pliny/utils/contentlayer'
 import { allBlogs } from 'contentlayer/generated'
 //a little experiment:
 import Projects from './projects'
-import HomeAbout from '@/components/HomeAbout'
+// import HomeAbout from '@/components/HomeAbout'
 import Image from '@/components/Image'
 import SocialIcon from '@/components/social-icons'
 
