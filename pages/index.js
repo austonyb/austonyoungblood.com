@@ -8,6 +8,11 @@ import { sortedBlogPost, allCoreContent } from 'pliny/utils/contentlayer'
 import { allBlogs } from 'contentlayer/generated'
 //a little experiment:
 import Projects from './projects'
+import HomeAbout from '@/components/HomeAbout'
+import Image from '@/components/Image'
+import SocialIcon from '@/components/social-icons'
+
+
 const MAX_DISPLAY = 5
 export const getStaticProps = async () => {
   const sortedPosts = sortedBlogPost(allBlogs)
@@ -18,10 +23,14 @@ export const getStaticProps = async () => {
     },
   }
 }
+
+
 export default function Home({ posts }) {
   return (
     <>
       <PageSEO title={siteMetadata.title} description={siteMetadata.description} />
+      {/* <HomeAbout /> */}
+
       {/* Import the projects page into the top of the index page. */}
       <Projects />
 
@@ -109,7 +118,7 @@ export default function Home({ posts }) {
                   That might be a little too ambitious... but that is what I am endeavouring to do! For the longest time I have wanted a place where I could share my projects, portfolio pieces, art, and everything else in-between. This site is where all of those things meet.
                 </p> */}
                 <p className='dark:text-gray-100'>
-                  I am mobile developer, web engineer, filmmaker, drone pilot, and lover of creative pursuits.
+                  I am full-stack web developer, mobile developer, filmmaker, drone pilot, and lover of creative pursuits.
                 </p>
                 <Link
                   href={`/about`}
@@ -121,44 +130,6 @@ export default function Home({ posts }) {
               </div>
             </div>
           </div>
-          {/* <div class=" w-full items-center px-5">
-            <div class="prose mx-auto flex w-full max-w-max flex-wrap justify-center lg:max-w-3xl">
-              <div class="relative justify-center lg:px-4">
-                <div class="lg:grid lg:grid-cols-2">
-                  <div class="p-8">
-                    <h1 className='dark:text-gray-100'>Short length headline.</h1>
-                    <p className='dark:text-gray-100'>
-                      You're about to launch soon and must be 100% focused on your product. Don't
-                      loose precious days designing, coding the landing page and testing .
-                    </p>
-                    <a
-                      href="#"
-                      class="mt-4 inline-flex items-center font-semibold text-blue-600 hover:text-neutral-600 lg:mb-0"
-                      title="read more"
-                    >
-                      {' '}
-                      Read More »{' '}
-                    </a>
-                  </div>
-                  <div class="p-8">
-                    <h1 className='dark:text-gray-100'>Short length headline.</h1>
-                    <p className='dark:text-gray-100'>
-                      You're about to launch soon and must be 100% focused on your product. Don't
-                      loose precious days designing, coding the landing page and testing .
-                    </p>
-                    <a
-                      href="#"
-                      class="mt-4 inline-flex items-center font-semibold text-blue-600 hover:text-neutral-600 lg:mb-0"
-                      title="read more"
-                    >
-                      {' '}
-                      Read More »{' '}
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div> */}
         </section>
       </div>
 
