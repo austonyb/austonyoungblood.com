@@ -112,12 +112,12 @@ export default function Home({ posts }) {
           <div class=" mx-auto flex flex-col items-center px-5 py-8">
             <div class="prose mb-8 flex w-full max-w-max flex-col text-left lg:max-w-2xl">
               <div class="mx-auto w-full">
-                <h1 className='dark:text-gray-100'>Thanks for visiting!</h1>
+                <h1 className="dark:text-gray-100">Thanks for visiting!</h1>
                 {/* <h2 className='dark:text-gray-100 italic'>A Place for...everything! </h2> */}
                 {/* <p className='dark:text-gray-100'>
                   That might be a little too ambitious... but that is what I am endeavouring to do! For the longest time I have wanted a place where I could share my projects, portfolio pieces, art, and everything else in-between. This site is where all of those things meet.
                 </p> */}
-                <p className='dark:text-gray-100'>
+                <p className="dark:text-gray-100">
                   I am full-stack web developer, mobile developer, filmmaker, drone pilot, and lover of creative pursuits.
                 </p>
                 <Link
